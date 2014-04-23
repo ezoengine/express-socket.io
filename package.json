@@ -4,7 +4,10 @@
   "author":"geekuillaume",
   "dependencies": {
   	"socket.io": "*",
-  	"express": "*"
+  	"express": "*",
+    "body-parser":"*",
+    "multiparty":"*",
+    "util":"*"
   	  },
   "scripts": {
   	"start": "node server.js"
