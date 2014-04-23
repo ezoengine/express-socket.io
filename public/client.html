@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+      <script src="/socket.io/socket.io.js"></script>
+      <script>
+//Socket.io
+var socket = io.connect();
+socket.on('message', function(data) {
+   console.log("socket.onMessage:"+data);
+});
+socket.on('connect', function() {
+   console.log('connected');
+   socket.emit('message', 'test...');
+});
+      </script>
+   </head>
+   <body>
+   </body>
+</html>
